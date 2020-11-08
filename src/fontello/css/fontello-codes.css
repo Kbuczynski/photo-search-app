@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+ 
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-location:before { content: '\e07a'; } /* '' */
+.icon-left:before { content: '\e75d'; } /* '' */
+.icon-right:before { content: '\e75e'; } /* '' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */

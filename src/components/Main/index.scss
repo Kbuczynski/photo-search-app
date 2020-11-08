@@ -1,0 +1,98 @@
+@import "../../globalStyles/abstracts/mixins";
+@import "../../globalStyles/abstracts/variables";
+
+.main {
+  min-height: 100vh;
+  position: relative;
+  @include center();
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url("../../assets/island.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @include respond-to("very-small") {
+      padding: 0 1.5rem;
+    }
+
+    &__header {
+      color: $white;
+
+      &__title {
+        font-size: 3rem;
+        margin: 1.5rem 0;
+      }
+
+      &__text {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+
+        @include respond-to("very-small") {
+          font-size: 1rem;
+        }
+
+        &__link {
+          color: $white;
+          filter: opacity(0.7);
+          transition: filter 0.1s ease;
+
+          &:hover {
+            filter: opacity(1);
+          }
+        }
+      }
+    }
+
+    &__trending {
+      color: $white;
+      margin-top: 1rem;
+
+      &__text {
+        display: flex;
+
+        @include respond-to("very-small") {
+          flex-direction: column;
+        }
+
+        & > span {
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+
+        &__links {
+          display: flex;
+
+          @include respond-to("very-small") {
+            padding: 0.2rem 0;
+          }
+
+          & > a {
+            color: $white;
+            text-decoration: none;
+            filter: opacity(0.7);
+
+            &:hover {
+              filter: opacity(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}

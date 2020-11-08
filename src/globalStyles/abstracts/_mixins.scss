@@ -1,0 +1,32 @@
+@mixin respond-to($breakpoint) {
+  // Small phone
+  @if $breakpoint == "very-small" {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  // Phone
+  @if $breakpoint == "small" {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+  // Tablet
+  @else if $breakpoint == "medium" {
+    @media (max-width: 1300px) {
+      @content;
+    }
+  }
+  // Only desktop
+  @else if $breakpoint == "only-desktop" {
+    @media (min-width: 1300px) {
+      @content;
+    }
+  }
+}
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

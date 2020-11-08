@@ -1,0 +1,61 @@
+@import "../../../globalStyles/abstracts/mixins";
+@import "../../../globalStyles/abstracts/variables";
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  cursor: zoom-out;
+  background-color: rgba(49, 49, 49, 0.404);
+  @include center;
+
+  &__box {
+    background-color: $white;
+    border-radius: 0.5rem;
+
+    &__user {
+      padding: 0.5rem 2rem;
+
+      & > h3 {
+        margin-bottom: 0;
+      }
+
+      & > p {
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    &__img {
+      width: 500px;
+      max-height: 75vh;
+      @include center;
+      overflow: hidden;
+
+      @include respond-to("very-small") {
+        width: 100%;
+      }
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__location {
+      padding: 0.5rem 2rem;
+      display: flex;
+      align-items: center;
+
+      & > i {
+        color: $icons;
+        margin-right: 0.5rem;
+      }
+
+      & > p {
+        font-weight: bold;
+      }
+    }
+  }
+}

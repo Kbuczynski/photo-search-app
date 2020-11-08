@@ -1,0 +1,8 @@
+@import "../../globalStyles/abstracts/mixins";
+
+.pageNotFound {
+  width: 100%;
+  height: 100vh;
+  @include center;
+  flex-direction: column;
+}

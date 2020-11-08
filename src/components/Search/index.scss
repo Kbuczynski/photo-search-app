@@ -1,0 +1,121 @@
+@import "../../globalStyles/abstracts/variables";
+@import "../../globalStyles/abstracts/mixins";
+
+.show {
+  visibility: initial !important;
+  z-index: 1 !important;
+}
+
+.search--gray {
+  background-color: $gray !important;
+  border-radius: 2rem !important;
+  transition: background-color 0.1s ease;
+
+  &:focus {
+    background-color: $white !important;
+  }
+}
+
+.search__box__suggestions--gray {
+  background-color: $gray !important;
+
+  & > li {
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  margin-top: 1.5rem;
+  transition: border 0.1s ease;
+  position: relative;
+  background-color: $white;
+  border-radius: 0.5rem;
+
+  &__send,
+  &__reset {
+    position: absolute;
+    border: 0;
+    background-color: $white;
+    padding: 1rem 0.6rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: $icons;
+    transition: color 0.1s ease;
+    background: transparent;
+    z-index: 1;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:focus {
+      color: $black;
+      outline: 0;
+    }
+  }
+
+  &__send {
+    top: 0.1rem;
+    left: 0.2rem;
+  }
+
+  &__box {
+    &__input {
+      border: 0;
+      padding: 1.4rem 1.4rem 1.4rem 4rem;
+      min-width: 40vw;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      letter-spacing: 0.05rem;
+      background: transparent;
+      transition: box-shadow 0.1s ease;
+
+      &:focus {
+        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.123);
+        outline: 0;
+      }
+    }
+
+    &__suggestions {
+      visibility: hidden;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border-radius: 0.5rem;
+      background-color: $white;
+      list-style-type: none;
+      padding-left: 0;
+      transition: visibility 0.1s 0.1s ease;
+
+      &__item {
+        padding: 1rem 1rem;
+        transition: background-color 0.1s ease;
+        cursor: pointer;
+
+        &:first-child {
+          margin-top: 0.5rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0.5rem;
+        }
+
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+
+  &__reset {
+    top: 0;
+    right: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-size: 1.65rem;
+    visibility: hidden;
+  }
+}
