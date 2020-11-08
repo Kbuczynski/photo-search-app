@@ -45,6 +45,7 @@ const Photos = ({
       setColSecond([]);
       setColThird([]);
       setPage(1);
+      window.scroll(0, 0);
     };
 
     handleClear();

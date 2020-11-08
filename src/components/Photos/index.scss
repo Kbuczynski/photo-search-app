@@ -72,6 +72,7 @@
         text-decoration: none;
         transition: all 0.1s ease;
         width: 100%;
+        white-space: nowrap;
 
         &:hover {
           color: $black;
@@ -83,16 +84,16 @@
     &__rightArrow,
     &__leftArrow {
       position: absolute;
-      top: 0;
+      top: -0.5rem;
       cursor: pointer;
       background-color: rgba(128, 128, 128, 0.123);
-      height: 80%;
+      height: 100%;
       padding: 0 0.5rem;
       @include center;
       transition: color 0.1s ease;
 
-      @include respond-to("very-small") {
-        height: 100%;
+      @include respond-to("small") {
+        top: 0;
       }
     }
 
