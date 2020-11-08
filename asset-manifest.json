@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/photo-search-app/static/css/main.49fbde87.chunk.css",
-    "main.js": "/photo-search-app/static/js/main.6452a007.chunk.js",
-    "main.js.map": "/photo-search-app/static/js/main.6452a007.chunk.js.map",
+    "main.css": "/photo-search-app/static/css/main.6e38e1a2.chunk.css",
+    "main.js": "/photo-search-app/static/js/main.a89ed197.chunk.js",
+    "main.js.map": "/photo-search-app/static/js/main.a89ed197.chunk.js.map",
     "runtime-main.js": "/photo-search-app/static/js/runtime-main.e4af8a3b.js",
     "runtime-main.js.map": "/photo-search-app/static/js/runtime-main.e4af8a3b.js.map",
     "static/js/2.4b792fbc.chunk.js": "/photo-search-app/static/js/2.4b792fbc.chunk.js",
     "static/js/2.4b792fbc.chunk.js.map": "/photo-search-app/static/js/2.4b792fbc.chunk.js.map",
     "index.html": "/photo-search-app/index.html",
-    "static/css/main.49fbde87.chunk.css.map": "/photo-search-app/static/css/main.49fbde87.chunk.css.map",
+    "static/css/main.6e38e1a2.chunk.css.map": "/photo-search-app/static/css/main.6e38e1a2.chunk.css.map",
     "static/js/2.4b792fbc.chunk.js.LICENSE.txt": "/photo-search-app/static/js/2.4b792fbc.chunk.js.LICENSE.txt",
     "static/media/fontello.css": "/photo-search-app/static/media/fontello.aefbbf95.woff",
     "static/media/index.scss": "/photo-search-app/static/media/island.02ef1aed.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.e4af8a3b.js",
     "static/js/2.4b792fbc.chunk.js",
-    "static/css/main.49fbde87.chunk.css",
-    "static/js/main.6452a007.chunk.js"
+    "static/css/main.6e38e1a2.chunk.css",
+    "static/js/main.a89ed197.chunk.js"
   ]
 }
