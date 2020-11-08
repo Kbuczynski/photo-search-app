@@ -16,7 +16,7 @@ const Suggestions = ({ inputValue, isGray, setInputValue, show }) => {
     };
 
     if (inputValue.length > 0) {
-      const currentTimeoutId = setTimeout(getSuggestions, 1000);
+      const currentTimeoutId = setTimeout(getSuggestions, 500);
       setTimeoutId(currentTimeoutId);
     }
 

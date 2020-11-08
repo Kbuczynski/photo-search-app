@@ -106,7 +106,7 @@ const Photos = ({
             <PhotosSimilar inputValue={query} />
 
             {colFirst.length === 0 && !isLoading && (
-              <p>No pictures with search phrase 😕</p>
+              <p>No pictures with given searching phrase 😕</p>
             )}
 
             <div className="photos__gallery">
